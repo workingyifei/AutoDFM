@@ -1,0 +1,5 @@
+.conda
+__pycache__
+bom
+src_pcb/__pycache__
+src_pcb/test/__pycache__

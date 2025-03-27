@@ -1,0 +1,39 @@
+supplier_id: "PCBA_MFG_001"
+name: "Advanced PCB Solutions"
+location: "Shenzhen, China"
+capabilities:
+  trace_capabilities:
+    min_width: 0.075  # mm
+    min_spacing: 0.075  # mm
+    max_copper_weight: 2  # oz
+    
+  via_capabilities:
+    min_diameter: 0.2  # mm
+    min_drill_size: 0.15  # mm
+    max_aspect_ratio: 10:1
+    min_annular_ring: 0.1  # mm
+    supported_types: ["through", "blind", "buried"]
+    
+  board_capabilities:
+    thickness_range: [0.4, 4.0]  # mm
+    max_layers: 20
+    min_layers: 1
+    max_board_size: [500, 400]  # mm
+    
+  component_capabilities:
+    min_component_spacing: 0.4  # mm
+    max_component_height: 15.0  # mm
+    min_pad_spacing: 0.15  # mm
+    
+  finish_capabilities:
+    supported_finishes: ["HASL", "ENIG", "OSP"]
+    
+  soldermask_capabilities:
+    min_width: 0.075  # mm
+    available_colors: ["green", "red", "black"]
+    
+  manufacturing_specs:
+    lead_time: [3, 5, 10]  # days
+    min_order_quantity: 5
+    prototype_capability: true
+    certifications: ["ISO 9001", "UL", "RoHS"] 

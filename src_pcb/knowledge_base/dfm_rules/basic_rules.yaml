@@ -1,0 +1,44 @@
+trace_rules:
+  min_width: 0.1  # mm
+  min_spacing: 0.1  # mm
+  min_to_board_edge: 0.3  # mm
+  copper_weight: [0.5, 1, 2]  # oz
+
+via_rules:
+  min_diameter: 0.3  # mm
+  min_drill_size: 0.2  # mm
+  max_aspect_ratio: 8:1
+  min_annular_ring: 0.125  # mm
+  via_types: ["through", "blind", "buried"]
+
+board_rules:
+  min_thickness: 0.4  # mm
+  max_thickness: 3.2  # mm
+  max_layers: 16
+  min_layers: 2
+  standard_sizes:
+    - [100, 100]  # mm
+    - [150, 100]  # mm
+    - [200, 150]  # mm
+
+component_rules:
+  min_component_spacing: 0.5  # mm
+  min_edge_clearance: 3.0  # mm
+  max_component_height: 10.0  # mm
+  min_pad_spacing: 0.2  # mm
+
+soldermask_rules:
+  min_width: 0.1  # mm
+  standard_colors: ["green", "red", "blue", "black", "white"]
+  min_clearance: 0.075  # mm
+
+silkscreen_rules:
+  min_width: 0.15  # mm
+  min_height: 1.0  # mm
+  min_clearance: 0.15  # mm
+
+surface_finish:
+  types: ["HASL", "ENIG", "OSP", "Immersion Tin", "Immersion Silver"]
+  thickness_ranges:
+    HASL: [2, 35]  # μm
+    ENIG: [3, 6]  # μm 
